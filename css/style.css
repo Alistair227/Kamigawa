@@ -1,0 +1,609 @@
+/* COLOR PALETTES */
+
+/* #4700D8 --> dark violet */
+/* #9900F0 --> violet */
+/* #F900BF --> neon pink */
+/* #FF85B3 --> pink */
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Orbitron", serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+hr {
+  color: #fff;
+}
+
+/* HEADER */
+
+.nav-item {
+  padding: 0 1.4rem;
+}
+
+.nav-link,
+.dropdown-item {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+a.nav-link:hover,
+a.dropdown-item:hover {
+  color: #f900bf;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.offcanvas {
+  background-color: rgb(48, 48, 48);
+  color: #f900bf;
+}
+
+/* ////////////////////////// */
+
+/* HERO SECTION */
+
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 91px);
+  padding-top: 13rem;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.hero-box {
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Goldman", serif;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #f900bf;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f900bf,
+    0 0 82px #f900bf, 0 0 92px #f900bf, 0 0 102px #f900bf, 0 0 151px #f900bf;
+}
+
+.main-title {
+  animation-duration: 3s;
+}
+
+.hero-txt {
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px #f900bf;
+  animation-duration: 3s;
+}
+
+.cta {
+  background-color: #f900bf;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.8rem;
+  animation-duration: 3s;
+}
+
+.cta:hover {
+  background-color: #fff;
+  color: #f900bf;
+}
+
+/* ////////////////////////// */
+
+/* PAGE BACKGROUND */
+
+.page {
+  background-image: linear-gradient(
+    to right bottom,
+    #9900f0,
+    #ba00e3,
+    #d400d7,
+    #e800ca,
+    #f900bf
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1500px;
+}
+
+/* ////////////////////////// */
+
+/* MID SECTION */
+
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 7px #4700d8, 0 0 10px #4700d8, 0 0 21px #4700d8,
+    0 0 42px #4700d8, 0 0 82px #4700d8, 0 0 92px #4700d8, 0 0 102px #4700d8,
+    0 0 151px #4700d8;
+}
+
+.mid-p {
+  font-family: "Goldman", serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.mid-img {
+  border: 1rem solid #4700d8;
+  border-radius: 5px;
+}
+
+.mid-cta {
+  background-color: #4700d8;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.mid-cta:hover {
+  background-color: #fff;
+  color: #4700d8;
+}
+
+/* ////////////////////////// */
+
+/* JAPANESE SECTION */
+
+.japanese-section {
+  background-image: url(../img/japanese.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #f900bf, 0 0 40px #f900bf,
+      0 0 80px #f900bf, 0 0 90px #f900bf, 0 0 100px #f900bf, 0 0 150px #f900bf;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.japanese-txt {
+  padding-top: 10rem;
+}
+
+.japanese-txt h3 {
+  font-family: "Noto Sans Jp", serif;
+  font-size: 4rem;
+  color: #f900bf;
+  text-shadow: 2px 2px #fff;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.comic-cta {
+  background-color: #f900bf;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.comic-cta:hover {
+  background-color: #fff;
+  color: #f900bf;
+  border: 1px solid #f900bf;
+}
+
+/* ////////////////////////// */
+
+/* VIDEO AND CARDS SECTION */
+
+iframe {
+  border: 0.5rem solid #4700d8;
+  border-radius: 2px;
+}
+
+.trailer-icon i {
+  color: #4700d8;
+  font-size: 5rem;
+  text-shadow: 2px 4px #fff;
+}
+
+.trailer-icon i {
+  transition: all 0.5s ease-in-out;
+}
+
+.trailer-icon i:hover {
+  transform: translate(-40%, 0);
+}
+
+.trailer-title,
+.cards-title {
+  color: #4700d8;
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 2px 2px #fff;
+}
+
+.cards-section {
+  padding: 5rem 0 7rem 0;
+}
+
+.last-p {
+  font-family: "Goldman", serif;
+  font-size: 1.2rem;
+  color: #4700d8;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.see-more-btn {
+  background-color: #4700d8;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.see-more-btn:hover {
+  background-color: #fff;
+  color: #4700d8;
+  border: 1px solid #4700d8;
+}
+
+.cards-icon i {
+  color: #4700d8;
+  font-size: 5rem;
+  text-shadow: -2px 4px #fff;
+}
+
+.cards-icon i {
+  transition: all 0.5s ease-out;
+}
+
+.cards-icon i:hover {
+  transform: translate(40%, 0);
+}
+
+.swiper {
+  width: 225px;
+  height: 305px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-image: url(../img/kaito-shizuki.jpg);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-image: url(../img/hidetsugu.jpg);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-image: url(../img/atsushi.jpg);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-image: url(../img/higure.jpg);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-image: url(../img/oathkeeper.jpg);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-image: url(../img/plains.jpg);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-image: url(../img/forest.jpg);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-image: url(../img/island.jpg);
+}
+
+/* ////////////////////////// */
+
+/* FOOTER */
+
+footer {
+  background-color: #ff85b3;
+  color: #4700d8;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: #4700d8;
+}
+
+a.social .brand {
+  transition: all 0.4s ease-in-out;
+}
+
+a.social:hover .ig {
+  color: #bc2a8d;
+}
+
+a.social:hover .fb {
+  color: #4267b2;
+}
+
+a.social:hover .tw {
+  color: #1da1f2;
+}
+
+a.social:hover .yt {
+  color: #ff0000;
+}
+
+.wizard {
+  font-size: 5.5rem;
+  color: #4700d8;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+/* ////////////////////////// */
+
+/* PAGE 2 */
+
+.page2 {
+  background-image: linear-gradient(
+    to left top,
+    #9900f0,
+    #ba00e3,
+    #d400d7,
+    #e800ca,
+    #f900bf
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1500px;
+}
+
+.main-container-2 {
+  padding-top: 2rem;
+}
+
+.buy-box {
+  background-color: #4700d8;
+  width: 100%;
+  height: 38rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #fff,
+      0 0 80px #fff, 0 0 90px #fff, 0 0 100px #4700d8, 0 0 150px #4700d8;
+  }
+}
+
+.buy-box-title {
+  color: #f900bf;
+  animation: pulsate 3s infinite alternate;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #bc13fe, 0 0 0.2rem #bc13fe, 0 0 2rem #4700d8,
+    0 0 0.8rem #4700d8, 0 0 2.8rem #4700d8, inset 0 0 1.3rem #4700d8;
+}
+
+.submit-btn {
+  background-color: #4700d8;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #4700d8;
+  border: 1px solid #4700d8;
+}
+
+.banner {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+h4 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 7px #f900bf, 0 0 10px #f900bf, 0 0 21px #f900bf,
+    0 0 42px #f900bf, 0 0 82px #f900bf, 0 0 92px #f900bf, 0 0 102px #f900bf,
+    0 0 151px #f900bf;
+}
+
+.dl-text {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 15rem;
+  text-shadow: 0 0 7px #f900bf, 0 0 10px #f900bf, 0 0 21px #f900bf,
+    0 0 42px #f900bf, 0 0 82px #f900bf, 0 0 92px #f900bf, 0 0 102px #f900bf,
+    0 0 151px #f900bf;
+}
+
+.dl-icon {
+  color: #fff;
+  font-size: 5rem;
+  padding-top: 10rem;
+  text-shadow: 0 0 7px #f900bf, 0 0 10px #f900bf, 0 0 21px #f900bf,
+    0 0 42px #f900bf, 0 0 82px #f900bf, 0 0 92px #f900bf, 0 0 102px #f900bf,
+    0 0 151px #f900bf;
+}
+
+.banner a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.banner a:hover i {
+  color: #f900bf;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #4700d8,
+    0 0 82px #4700d8, 0 0 92px #4700d8, 0 0 102px #4700d8, 0 0 151px #4700d8;
+}
+
+.gallery {
+  padding: 6rem 0;
+}
+
+.gallery-item {
+  min-height: 100%;
+  border: 0.5px solid #4700d8;
+}
+
+/* ////////////////////////// */
+
+/* MEDIA QUERIES LG */
+
+@media screen and (min-width: 991px) {
+  .discover {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .dragons-lore {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+/* ////////////////////////// */
+
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .cta {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    padding-top: 3rem;
+  }
+
+  .japanese-txt h3 {
+    font-size: 1.6rem;
+  }
+
+  .comic-cta {
+    font-size: 1.1rem;
+  }
+
+  .trailer-icon i,
+  .cards-icon i {
+    display: none;
+  }
+
+  .trailer-div {
+    order: 1;
+    justify-content: center;
+    padding-right: 3.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .video {
+    order: 2;
+  }
+
+  .trailer-title {
+    font-size: 2.5rem;
+  }
+
+  .new-cards-div {
+    padding-bottom: 1.5rem;
+  }
+
+  .cards-title {
+    font-size: 2.5rem;
+  }
+
+  .footer-social {
+    order: 1;
+  }
+
+  .footer-logo {
+    order: 2;
+  }
+
+  .footer-copyright {
+    order: 3;
+  }
+
+  /* // */
+
+  /* PAGINA 2 */
+
+  .buy-box {
+    height: auto;
+  }
+
+  .form-box {
+    order: 2;
+    padding-bottom: 3rem;
+  }
+
+  .kamigawa-box {
+    order: 1;
+  }
+
+  .submit-col {
+    display: flex;
+    justify-content: end;
+  }
+
+  /* // */
+}
+
+/* ////////////////////////// */

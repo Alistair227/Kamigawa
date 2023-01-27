@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy your box</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Icon -->
+    <link rel="icon" href="img/logo-2.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" height="65" alt="logo-kamigawa"></a>
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo.png" height="50"
+                                alt="logo-kamigawa"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html" title="home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" title="discover-kamigawa">#Kamigawa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" title="dragons">Dragons</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="index.html" title="watch-trailer">Watch the
+                                            trailer</a></li>
+                                    <li><a class="dropdown-item" href="index.html" title="see-cards">See set cards</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="index.html" title="view-collections">View
+                                            collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search Cards"
+                                aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- /HEADER -->
+
+
+    <!-- MAIN -->
+
+    <div class="page2">
+
+        <main class="pb-5">
+
+            <div class="container-lg main-container-2">
+                <div class="row">
+                    <div class="col-12 pb-4 text-center">
+                        <h2 class="buy-box-title">Buy your box</h2>
+                    </div>
+                </div>
+
+                <form action="" class="needs-validation">
+
+                    <div class="row buy-box">
+                        <div class="col-lg-6 form-box">
+
+                            <div>
+                                <label for="first-name" class="form-label text-white pt-1">First Name</label>
+                                <input type="text" name="first-name" id="first-name" class="form-control"
+                                    placeholder="Enter your first name" required>
+
+                            </div>
+                            <div>
+                                <label for="last-name" class="form-label text-white pt-3">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" class="form-control"
+                                    placeholder="Enter your last name" required>
+                            </div>
+                            <div>
+                                <label for="mail" class="form-label text-white pt-3">E-mail address</label>
+                                <input type="email" name="mail" id="mail" class="form-control"
+                                    placeholder="Enter your e-mail address" required>
+                            </div>
+                            <div>
+                                <label for="phone-number" class="form-label text-white pt-3">Phone number</label>
+                                <input type="tel" name="phone-number" id="phone-number" class="form-control"
+                                    placeholder="Enter your phone number" required>
+                            </div>
+                            <div>
+                                <label for="shipping-address" class="form-label text-white pt-3">Shipping
+                                    Address</label>
+                                <input type="text" name="shipping-address" id="shipping-address" class="form-control"
+                                    placeholder="Enter your shipping address" required>
+                            </div>
+                            <div>
+                                <label for="quantity" class="form-label text-white pt-3">Quantity</label>
+                                <input type="number" name="quantity" id="quantity" class="form-control"
+                                    placeholder="Choose quantity" required>
+                            </div>
+                            <div>
+                                <label for="credit-card" class="form-label text-white pt-3">Choose your payment
+                                    method</label>
+                                <select name="credit-card" id="credit-card" class="form-select" required>
+                                    <option value="">Choose payment...</option>
+                                    <option value="1">Paypal</option>
+                                    <option value="2">Visa</option>
+                                    <option value="3">Mastercard</option>
+                                    <option value="4">Other</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 d-flex justify-content-center align-items-center kamigawa-box">
+                            <img src="img/box.png" class="img-fluid" alt="kamigawa-box">
+                        </div>
+                    </div>
+                    <div class="row pt-3 pb-5">
+                        <div class="submit-col">
+                            <button type="submit" class="btn btn-large btn-outline-light submit-btn">Confirm
+                                Order</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <!-- /MAIN -->
+
+
+        <!-- BANNER SECTION -->
+
+        <section class="banner d-flex justify-content-center align-items-center">
+
+            <div class="text-center">
+                <h4>Download now MTG Arena</h4>
+                <p class="dl-text">...
+                    and challenge other players from your PC too</p>
+                <a href="#"><i class="fa-solid fa-download dl-icon"></i></a>
+            </div>
+
+        </section>
+
+        <!-- /BANNER SECTION -->
+
+
+        <!-- GALLERY SECTION -->
+
+        <section>
+            <div class="container-lg">
+                <div class="row gallery">
+                    <div class="text-center pb-4">
+                        <h2>The art of Kamigawa: Neon Dinasty</h2>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art1.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art1"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art2.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art2"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art3.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art3"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art4.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art4"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art5.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art5"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art6.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art6"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art7.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art7"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art8.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art8"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art9.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art9"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art10.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art10"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art11.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art11"></a>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 p-1">
+                        <a href="#"><img src="img/art12.jpg" data-fancybox="kamigawa-gallery"
+                                class="img-fluid gallery-item" alt="art12"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start py-lg-4 footer-logo">
+                    <a href=""><i class="fa-brands fa-wizards-of-the-coast wizard"></i></a>
+                </div>
+                <div class="col-lg-4 text-center py-lg-4 py-5 footer-social">
+                    <div class="pb-1">follow us</div>
+                    <a href="#" class="social"><i class="fa-brands fa-instagram pe-2 brand ig"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-facebook pe-2 brand fb"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-twitter pe-2 brand tw"></i></a>
+                    <a href="#" class="social"><i class="fa-brands fa-youtube brand yt"></i></a>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end py-lg-4 pb-5 footer-copyright">
+                    <p class="copyright">© 1993-2022 Wizards of the Coast LLC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /FOOTER -->
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+</body>
+
+</html>
